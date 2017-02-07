@@ -1,0 +1,28 @@
+<p>
+  playlist-component works!
+</p>
+<table class= "table table-bordered table-hover">
+	<thead>
+		<td>ID</td>
+		<td>Title</td>
+		<td>URL</td>
+		<td>Description</td>
+	</thead>
+	<tbody >
+			<tr *ngFor = "let y of videos" (click) = "ngClick(y.URL)">
+			<td>{{y.id}}</td>
+			<td>{{y.title}}</td>
+			<td>{{y.URL}}</td>
+			<td>{{y.desc}}</td>
+			
+		</tr>
+		
+	</tbody>	
+
+</table>
+
+<youtube-player
+      [videoId]="video_id">
+      
+    </youtube-player>
+   
